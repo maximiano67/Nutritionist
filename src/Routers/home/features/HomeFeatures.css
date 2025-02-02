@@ -46,6 +46,7 @@
 .cart-list li {
     padding: 40px 50px; 
     gap: 24px;
+    border-radius: 12px;
     border: 1px solid #E5F5BD;
     background-color: #F6FBE9;
     display: flex;
