@@ -1,0 +1,65 @@
+.main-footer {
+    width: 100%;
+    height: 299px;
+    background-color: #1A3129;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-footer .footer {
+    width: 1595px;
+    margin: 0 163px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .info-about .nav {
+    display: flex;
+}
+
+.footer .info-about .nav .nav-bar-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-cart-contact {
+    padding: 16px 30px 16px 20px;
+    background-color: #234338;
+    border: 1px solid #2C5446;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-cart-contact .info-contact {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-cart-contact .info-contact .info-contact,
+.footer-cart-contact .info-contact .email,
+.footer-cart-contact .info-contact .call,
+.footer-cart-contact .info-contact .location {
+    padding: 14px;
+    border: 1px solid #2C5446;
+    border-radius: 6px;
+    gap: 6px;
+    display: flex;
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer-cart-contact .info-contact .info-contact svg,
+.footer-cart-contact .info-contact .email svg,
+.footer-cart-contact .info-contact .call svg,
+.footer-cart-contact .info-contact .location svg {
+    color: #CBEA7B;
+}
+
+.footer-cart-contact p {
+    color: #fff;
+}
