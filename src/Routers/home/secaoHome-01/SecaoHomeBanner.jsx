@@ -21,7 +21,9 @@ const SecaoHomeBanner = () => {
           <div className="secao-home-info">
             <div className="home-info">
               <div className="secao-home-header">
+                <div className="header-home">
                 <h5>Transform Your ❤️ Health with</h5>
+                </div>
                 <div className="secao-home-title">
                 <h1>Personalized Nutrition Coaching</h1>
               </div>

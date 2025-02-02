@@ -58,16 +58,30 @@
 }
 
 .home-info .secao-home-header {
-    gap: 14px;
     display: flex;
     flex-direction: column;
 }
 
-.secao-home-header h5 {
+.header-home {
+    margin-bottom: 14px;
+}
+
+.header-home h5 {
     font-size: 28px;
     color: #1A3129;
     font-weight: bolder;
 }
+
+.header-home h5::after {
+    display: flex;
+    content: '';
+    margin-top: 10px;
+    width: 52%;
+    height: 3px;
+    border-bottom: 1px solid #CBEA7B;
+}
+
+
 
 .secao-home-header .secao-home-title h1 {
     font-size: 58px;

@@ -5,3 +5,7 @@
     text-decoration: none;
     font-family: "Urbanist", serif;
 }
+
+#root {
+    width: 1920px;
+}
