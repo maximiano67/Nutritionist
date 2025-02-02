@@ -1,11 +1,10 @@
 import './Home.css'
+import SecaoHomeBanner from './secaoHome-01/SecaoHomeBanner'
 
 const Home = () => {
   return (
     <div className='main-home'>
-      <div className="banner">
-        <h1>Aqui tem um banner</h1>
-      </div>
+      <SecaoHomeBanner/>
     </div>
   )
 }
