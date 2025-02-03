@@ -1,0 +1,123 @@
+.main-testimonials {
+    width: 100%;
+    margin-top: 130px;
+}
+
+.cart-testimonials {
+    width: 1596px;
+    height: 100%;
+    gap: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-testimonials .testimonials-title {
+    width: 100%;
+}
+
+
+
+.testimonials-title .cart-title {
+    margin: 0px 300px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonials-title .cart-title h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.testimonials-title .cart-title p {
+    font-size: 18px;
+}
+
+.cart-testimonials-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cart-testimonials-comments .cart-listas {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-listas .cart-list {
+    border: 1px solid #EEF8D3;
+    border-radius: 12px;
+}
+
+.cart-listas .cart-list .cart-comments {
+    padding: 40px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-comments .icons-comment {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icons-comment svg {
+    width: 40px;
+    height: 40px;
+    color: #356554;
+}
+
+.cart-comments .comment p {
+    font-size: 18px;
+}
+
+.cart-list .cart-perfil {
+    padding: 30px 40px;
+    gap: 12px;
+    background-color: #F6FBE9;
+    display: flex;
+    align-items: center;
+}
+
+.cart-perfil .cart-perfil-comment-img {
+    width: 60px;
+    height: 60px;
+}
+
+.cart-perfil .cart-perfil-comment-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-perfil p {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #1A3129;
+}
+
+.cart-testimonials-comments .testimonials-comments-carrosel-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-comments-carrosel-btns .comment-btn {
+    width: 58px;
+    height: 58px;
+    background-color: #F6FBE9;
+    border: 1px solid #EEF8D3;
+    cursor: pointer;
+}
+
+.comment-btn svg {
+    width: 34px;
+    height: 34px;
+    color: #333333;
+}
