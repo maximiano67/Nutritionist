@@ -5,10 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 //pages
 import JoinDemo from '../../Routers/joinDemo/JoinDemo';
 
-
-
 const NavBar = () => {
-const location = useLocation();
+    const location = useLocation();
     return (
         <div className='main-nav-bar'>
             <JoinDemo />
@@ -28,27 +26,27 @@ const location = useLocation();
                     <div className="nav-bar-links">
                         <ul className="links">
                             <li><Link to={'/home'}
-                            className={location.pathname === '/' || location.pathname === '/home' ? 'active' : ''} 
+                                className={location.pathname === '/' || location.pathname === '/home' ? 'active' : ''}
                             >Home</Link></li>
 
                             <li><Link to={'/about'}
-                             className={location.pathname === '/about'? 'active' : ''} 
+                                className={location.pathname === '/about' ? 'active' : ''}
                             >About</Link></li>
 
                             <li><Link to={'/team'}
-                             className={location.pathname === '/team'? 'active' : ''}
+                                className={location.pathname === '/team' ? 'active' : ''}
                             >Team</Link></li>
-                            
+
                             <li><Link to={'/process'}
-                             className={location.pathname === '/process'? 'active' : ''}
+                                className={location.pathname === '/process' ? 'active' : ''}
                             >Process</Link></li>
-                            
+
                             <li><Link to={'/pricing'}
-                             className={location.pathname === '/pricing'? 'active' : ''}
+                                className={location.pathname === '/pricing' ? 'active' : ''}
                             >Pricing</Link></li>
-                            
+
                             <li><Link to={'/blog'}
-                             className={location.pathname === '/blog'? 'active' : ''}
+                                className={location.pathname === '/blog' ? 'active' : ''}
                             >Blog</Link></li>
                         </ul>
 
