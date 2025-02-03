@@ -19,10 +19,14 @@
     align-items: center;
 }
 
-.nav-bar-logo li a{
+.nav-bar-logo li {
     display: flex;
     align-items: center;
     gap: 6px;
+
+}
+
+.nav-bar-logo li h1 a {
     color: #fff;
 }
 
@@ -39,23 +43,34 @@
 
 .nav-bar-links .links {
     display: flex;
-    
+
     gap: 26px;
 }
 
-.nav-bar-links .links a {
+.nav .nav-bar-links .links li a {
     color: #fff;
     font-size: 18px;
     font-weight: bolder;
 }
+
 .nav-bar-links .btn {
     width: 136px;
     height: 55px;
     background-color: #CBEA7B;
     border: none;
     border-radius: 8px;
-    color: #262626;
+
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
 }
+
+.nav-bar-links .btn a {
+    color: #262626;
+}
+
+/* loci */
+.nav-bar-links .links li a.active {
+    color: #CBEA7B;
+}
+

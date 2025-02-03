@@ -1,11 +1,9 @@
 //npm i -D react-router-dom installei isso
 import './App.css'
-import Home from './Routers/home/Home'
+import { Outlet } from 'react-router-dom'
+//pages
 import NavBar from './conponents/NavBar/NavBar'
 import Footer from './conponents/footer/Footer'
-//pages
-
-//import Home from './Routers/home/Home'
 
 function App() {
 
@@ -14,12 +12,11 @@ function App() {
     <div className='App'>
       <div className='global'>
 
-        <NavBar/>
+        <NavBar />
         <div className="globo-main">
-          <Home />
+          <Outlet />
         </div>
-        <Footer/>
-        
+        <Footer />
       </div>
     </div>
   )

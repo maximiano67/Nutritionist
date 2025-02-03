@@ -3,9 +3,10 @@ import './Footer.css'
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-
+//Logo
 import logoImg from '../../assets/imgLogo/iconsLogo.png'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// router
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,38 +14,33 @@ const Footer = () => {
       <div className="footer">
 
         <div className="info-about">
-          <Router>
-            <nav className="nav">
 
-              <ul className="nav-bar-logo">
-                <li>
-                  <Link to="/">
-                    <img src={logoImg} alt="Logo nutrição" />
-                    <h1>Nutritionist</h1>
-                  </Link>
-                </li>
+          <nav className="nav">
+
+            <ul className="nav-bar-logo">
+              <li><Link to={'/'}> <img src={logoImg} alt="Logo nutrição"/></Link>
+
+                <h1><Link to={'/home'}>Nutritionist</Link></h1>
+              </li>
+            </ul>
+
+
+            <div className="nav-bar-links">
+              <ul className="links">
+                <li><Link to={'/home'}>Home</Link></li>
+                <li><Link to={'/about'}>About</Link></li>
+                <li><Link to={'/team'}>Team</Link></li>
+                <li><Link to={'/process'}>Process</Link></li>
+                <li><Link to={'/pricing'}>Pricing</Link></li>
+                <li><Link to={'/blog'}>Blog</Link></li>
+                <li><Link to={'/contact'}>Contact</Link></li>
               </ul>
 
+            </div>
 
-              <div className="nav-bar-links">
-                <ul className="links">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/team">Team</Link></li>
-                  <li><Link to="/process">Process</Link></li>
-                  <li><Link to="/pricing">Pricing</Link></li>
-                  <li><Link to="/blog">Blog</Link></li>
-                  <li><Link to="/blog">Contact</Link></li>
-                </ul>
 
-              </div>
-              <Routes>
-                <Route path="/" />
-              </Routes>
+          </nav>
 
-            </nav>
-
-          </Router>
         </div>
 
         <div className="footer-cart-contact">
