@@ -52,6 +52,7 @@
     position: absolute;
     transform: translate(0);
 }
+
 /* -1618px */
 .cart-listas .cart-list {
     height: 398px;
@@ -151,8 +152,9 @@
     justify-content: center;
 }
 
-.ciculo .icons01.active, 
+.ciculo .icons01.active,
 .ciculo .icons02.active {
+    transform: scale(1.5);
     background-color: #356554;
 }
 
@@ -161,6 +163,10 @@
     content: '';
     width: 8px;
     height: 8px;
-    border-radius: 505%; 
+    border-radius: 505%;
     background-color: #E5F5BD;
+}
+
+.ciculo span {
+    transition: transform 1.9s ease, background-color 1.9s ease;
 }
