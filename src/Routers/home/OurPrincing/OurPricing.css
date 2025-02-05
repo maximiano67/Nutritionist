@@ -1,0 +1,195 @@
+.main-ourPricing {
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OurPricing {
+    width: 1596px;
+    height: 871px;
+    gap: 80px;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-ourPricing-title {
+    padding: 0px 300px;
+    height: 136px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-ourPricing-title .title h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.main-ourPricing-title .descrition p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.OurPricing-cart-price {
+    width: 100%;
+    height: 655px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OurPricing-cart-price .cart-btns {
+    width: 311px;
+    height: 108px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-btns .btn-price {
+    width: 233px;
+    height: 67px;
+    padding: 10px;
+    border: 1px solid #DCF1A7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-price .btn-monthly {
+    width: 114px;
+    height: 47px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #234338;
+}
+
+.btn-price .btn-yearly {
+    padding: 10px 24px;
+    width: 99px;
+    height: 47px;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: bolder;
+    color: #4c4c4c;
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+
+.OurPricing-cart-price .descrition p {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #4c4c4d;
+}
+
+.OurPricing-cards-plans {
+    width: 100%;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+}
+
+.OurPricing-cards-plans .cards-OurPricing {
+    height: 100%;
+    gap: 30px;
+    display: flex;
+}
+
+.cards-OurPricing .cart-pricing-plan {
+    width: 512px;
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid #EEF8D3;
+    background-color: #F6FBE9;
+    display: flex;
+}
+
+.cart-pricing-plan .card-plan-title {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-plan-title .cart-title{
+    width: 412px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-plan-title .cart-title h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.card-plan-title .cart-title p {
+    color: #4c4c4d;
+    font-weight: bolder;
+}
+
+.card-plan-title .cart-descrition {
+    width: 412px;
+    height: 108px;
+}
+
+.card-plan-title .cart-descrition p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-plan-title .cart-price-btn {
+    width: 412px;
+    height: 135px;
+    gap: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-price-btn .cart-price {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-price-btn .cart-price h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2C5446;
+}
+
+.cart-price-btn .btn-plan {
+    
+    height: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-plan .btn {
+    width: 412px;
+    padding: 18px 41px;
+    border-radius: 8px;
+    background-color: #CBEA7B;
+    color: #262626;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
