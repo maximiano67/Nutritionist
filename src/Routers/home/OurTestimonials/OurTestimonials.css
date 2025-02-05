@@ -15,7 +15,7 @@
 
 .cart-testimonials .testimonials-title {
     width: 100%;
-    
+
 }
 
 
@@ -38,24 +38,30 @@
 }
 
 .cart-testimonials-comments {
+    height: 506px;
+    gap: 50px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    overflow: hidden;
+    position: relative;
 }
 
 .cart-testimonials-comments .cart-listas {
     display: flex;
     gap: 20px;
+    position: absolute;
+    transform: translate(0);
 }
-
+/* -1618px */
 .cart-listas .cart-list {
-    width: 518.67px;
     height: 398px;
+    flex: 0 0 517px;
     border: 1px solid #EEF8D3;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .cart-listas .cart-list .cart-comments {
@@ -114,11 +120,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    gap: 30px;
+    /* oLHA AQUI */
 }
 
 .testimonials-comments-carrosel-btns .scroll-btn {
     width: 58px;
     height: 58px;
+    z-index: 2;
+    border-radius: 8px;
     background-color: #F6FBE9;
     border: 1px solid #EEF8D3;
     cursor: pointer;
@@ -128,4 +141,26 @@
     width: 34px;
     height: 34px;
     color: #333333;
+}
+
+.testimonials-comments-carrosel-btns .ciculo {
+    width: 56px;
+    height: 8px;
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.ciculo .icons01.active, 
+.ciculo .icons02.active {
+    background-color: #356554;
+}
+
+.ciculo .icons01,
+.ciculo .icons02 {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 505%; 
+    background-color: #E5F5BD;
 }

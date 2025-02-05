@@ -27,10 +27,44 @@ const TestimonialsItems = [
         img: perfilTres,
         name: 'Emily Davis'
     },
+    {
+        id: 4,
+        comment: "I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference. I've never felt better!",
+        img: perfilTres,
+        name: 'Emily Davis'
+    },
+    {
+        id: 5,
+        comment: "I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference. I've never felt better!",
+        img: perfilTres,
+        name: 'Emily Davis'
+    },
+    {
+        id: 6,
+        comment: "I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference. I've never felt better!",
+        img: perfilTres,
+        name: 'Emily Davis'
+    },
 ]
+
+import { useState } from 'react';
+
 
 
 const OurTestimonials = () => {
+
+    const [postion, setPosition] = useState({ x: 0 })
+    const [activeIcon, setActive] = useState('icons01')
+
+    const next = () => {
+        setPosition({ x: postion.x = -1618 });
+        setActive("icons02")
+
+    }
+    const prev = () => {
+        setPosition({ x: postion.x = 0 })
+        setActive("icons01")
+    }
     return (
         <div className='main-testimonials'>
             <div className="cart-testimonials">
@@ -42,7 +76,10 @@ const OurTestimonials = () => {
                 </div>
 
                 <div className="cart-testimonials-comments">
-                    <ul className='cart-listas'>
+                    <ul className='cart-listas' style={{
+                        transform: `translate(${postion.x}px`,
+                        transition: 'transform 1.9s ease'
+                    }}>
                         {TestimonialsItems.map((item) => (
                             <li key={item.id} className="cart-list">
                                 <div className="cart-comments">
@@ -67,8 +104,20 @@ const OurTestimonials = () => {
                     </ul>
 
                     <div className="testimonials-comments-carrosel-btns">
-                        <button className='scroll-btn'><MdOutlineArrowBackIosNew /></button>
-                        <button className='scroll-btn'><MdOutlineArrowForwardIos /></button>
+                        <button className='scroll-btn'
+                            onClick={prev}
+                        ><MdOutlineArrowBackIosNew />
+                        </button>
+
+                        <div className="ciculo">
+                            <span className={`icons01 ${activeIcon === 'icons01' ? 'active' : ''}`} ></span>
+                            <span className={`icons02 ${activeIcon === 'icons02' ? 'active' : ''}`} ></span>
+                        </div>
+
+                        <button className='scroll-btn'
+                            onClick={next}
+                        ><MdOutlineArrowForwardIos />
+                        </button>
                     </div>
 
                 </div>
