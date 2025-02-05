@@ -5,15 +5,17 @@
 
 .cart-testimonials {
     width: 1596px;
-    height: 100%;
+    height: 695px;
     gap: 80px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .cart-testimonials .testimonials-title {
     width: 100%;
+    
 }
 
 
@@ -47,8 +49,13 @@
 }
 
 .cart-listas .cart-list {
+    width: 518.67px;
+    height: 398px;
     border: 1px solid #EEF8D3;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cart-listas .cart-list .cart-comments {
@@ -77,6 +84,7 @@
 }
 
 .cart-list .cart-perfil {
+    height: 120px;
     padding: 30px 40px;
     gap: 12px;
     background-color: #F6FBE9;
@@ -108,7 +116,7 @@
     justify-content: center;
 }
 
-.testimonials-comments-carrosel-btns .comment-btn {
+.testimonials-comments-carrosel-btns .scroll-btn {
     width: 58px;
     height: 58px;
     background-color: #F6FBE9;
@@ -116,7 +124,7 @@
     cursor: pointer;
 }
 
-.comment-btn svg {
+.scroll-btn svg {
     width: 34px;
     height: 34px;
     color: #333333;

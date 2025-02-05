@@ -64,12 +64,11 @@ const OurTestimonials = () => {
                                 </div>
                             </li>
                         ))}
-
                     </ul>
 
                     <div className="testimonials-comments-carrosel-btns">
-                        <button className='comment-btn'><MdOutlineArrowBackIosNew /></button>
-                        <button className='comment-btn'><MdOutlineArrowForwardIos /></button>
+                        <button className='scroll-btn'><MdOutlineArrowBackIosNew /></button>
+                        <button className='scroll-btn'><MdOutlineArrowForwardIos /></button>
                     </div>
 
                 </div>
