@@ -1,6 +1,35 @@
 import './OurPricing.css'
+import './ResponsividadePricing.css'
 
 const OurPricing = () => {
+
+    const pricingItem = [
+        {
+            id: 1,
+            title: 'Basic Plan',
+            p: 'Up to 50% off on Yearly Plan',
+            descricao: 'Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.',
+            price: '$49',
+            span: '/month'
+        },
+        {
+            id: 2,
+            title: 'Premium Plan',
+            p: 'Up to 50% off on Yearly Plan',
+            descricao: 'Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you´ll receive video consultations, priority support, and personalized recipe recommendations.',
+            price: '$79',
+            span: '/month'
+        },
+        {
+            id: 3,
+            title: 'Ultimate Plan',
+            p: 'Up to 50% off on Yearly Plan',
+            descricao: 'Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.',
+            price: '$79',
+            span: '/month'
+        },
+    ]
+
     return (
         <div className='main-ourPricing'>
             <main className="OurPricing">
@@ -26,79 +55,38 @@ const OurPricing = () => {
 
                     <div className="OurPricing-cards-plans">
                         <ul className="cards-OurPricing">
-                            <li className="cart-pricing-plan">
-                                <div className="card-plan-title">
-                                    <div className="cart-title">
-                                        <h1>Basic Plan</h1>
-                                        <p>Up to 50% off on Yearly Plan</p>
-                                    </div>
+                            {pricingItem.map((item) => (
 
-                                    <div className="cart-descrition">
-                                        <p>Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.</p>
-                                    </div>
-                                    <div className="cart-price-btn">
-                                        <div className="cart-price">
-                                            <h1>$49</h1>
-                                            <span>/month</span>
+                                <li key={item.id} className='cart-pricing-plan'>
+                                    <div className="card-plan-title">
+
+                                        <div className="cart-title-pricing">
+                                            <h1>{item.title}</h1>
+                                            <p>{item.p}</p>
                                         </div>
 
-                                        <div className="btn-plan">
-                                            <button className='btn'>
-                                                Choose Plan
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li className="cart-pricing-plan">
-                                <div className="card-plan-title">
-                                    <div className="cart-title">
-                                        <h1>Premium Plan</h1>
-                                        <p>Up to 50% off on Yearly Plan</p>
-                                    </div>
-
-                                    <div className="cart-descrition">
-                                        <p>Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you´ll receive video consultations, priority support, and personalized recipe recommendations.</p>
-                                    </div>
-                                    <div className="cart-price-btn">
-                                        <div className="cart-price">
-                                            <h1>$79</h1><span>/month</span>
+                                        <div className="cart-descrition">
+                                            <p>{item.descricao}</p>
                                         </div>
 
-                                        <div className="btn-plan">
-                                            <button className='btn'>
-                                                Choose Plan
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                                        <div className="cart-price-btn">
 
-                            <li className="cart-pricing-plan">
-                                <div className="card-plan-title">
-                                    <div className="cart-title">
-                                        <h1>Ultimate Plan</h1>
-                                        <p>Up to 50% off on Yearly Plan</p>
-                                    </div>
+                                            <div className="cart-price">
+                                                <h1>{item.price}</h1>
+                                                <span>{item.span}</span>
+                                            </div>
 
-                                    <div className="cart-descrition">
-                                        <p>Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.</p>
-                                    </div>
-                                    <div className="cart-price-btn">
-                                        <div className="cart-price">
-                                            <h1>$99</h1><span>/month</span>
+                                            <div className="btn-plan">
+                                                <button className='btn'>
+                                                    Choose Plan
+                                                </button>
+                                            </div>
+
                                         </div>
 
-                                        <div className="btn-plan">
-                                            <button className='btn'>
-                                                Choose Plan
-                                            </button>
-                                        </div>
                                     </div>
-                                </div>
-                            </li>
-
+                                </li>
+                            ))}
                         </ul>
                     </div>
 

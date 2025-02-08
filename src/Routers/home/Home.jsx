@@ -9,11 +9,11 @@ import OurPricing from './OurPrincing/OurPricing'
 const Home = () => {
   return (
     <div className='main-home'>
-      <SecaoHomeBanner/>
-      <HomeFeatures/>
-      <OurBlogs/>
-      <OurTestimonials/>
-      <OurPricing/>
+      <SecaoHomeBanner />
+      <HomeFeatures />
+      <OurBlogs />
+      <OurTestimonials />
+      <OurPricing />
     </div>
   )
 }

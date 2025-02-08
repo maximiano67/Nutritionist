@@ -4,4 +4,9 @@
     list-style: none;
     text-decoration: none;
     font-family: "Urbanist", serif;
+    
 }
+
+html::-webkit-scrollbar {
+        width: 0px;
+    }

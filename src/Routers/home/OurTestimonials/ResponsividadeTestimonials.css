@@ -1,0 +1,103 @@
+@media (max-width: 1440px) {
+    .main-testimonials {
+        width: 100%;
+        height: 100%;
+        margin-top: 90px;
+    }
+
+    .main-testimonials .cart-testimonials {
+        width: 1280px;
+        gap: 60px;
+    }
+
+    .cart-testimonials .testimonials-title {
+        padding: 0px 250px;
+        height: 111px;
+    }
+
+    .testimonials-title .cart-title {
+        gap: 6px;
+    }
+
+    .cart-title h1 {
+        font-size: 38px;
+    }
+
+    .cart-title p {
+        font-size: 16px;
+    }
+
+    .cart-testimonials-comments {
+        gap: 40px;
+        height: 408px;
+    }
+
+    .main-cart {
+        height: 320px;
+    }
+
+    .main-cart .cart-listas {
+        height: 100%;
+        gap: 20px;
+    }
+
+    .cart-listas .cart-list {
+        width: 413.33px;
+        border-radius: 10px;
+    }
+
+    .cart-list .cart-comments {
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .cart-comments .icons-comment {
+        width: 34px;
+        height: 34px;
+    }
+
+    .icons-comment svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .cart-comments .comment p {
+        font-size: 16px;
+    }
+
+    .cart-perfil {
+        padding: 20px 30px;
+        gap: 10px;
+    }
+
+    .cart-perfil .cart-perfil-comment-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cart-perfil-comment-img img {
+        border-radius: 6px;
+    }
+
+    .commet-perfil-name p {
+        font-size: 16px;
+    }
+
+    .testimonials-comments-carrosel-btns {
+        width: 100%;
+        height: 48px;
+        gap: 40px;
+    }
+
+    .testimonials-comments-carrosel-btns .scroll-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 6px;
+    }
+
+    .scroll-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+}

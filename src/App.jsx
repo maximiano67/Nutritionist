@@ -16,7 +16,7 @@ function App() {
         <div className="globo-main">
           <Outlet />
         </div>
-        <Footer />
+        <Footer /> 
       </div>
     </div>
   )

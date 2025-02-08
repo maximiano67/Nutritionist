@@ -1,9 +1,184 @@
 .main-secao-home {
+    display: flex;
     width: 100%;
 }
 
-.secao-home {
+.main-secao-home .secao-home {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.secao-home .secao-home-img {
+    width: 949px;
+    height: 832px;
+    border-radius: 0px 0px 50px 0px;
+    background-image: url('../../../assets/bannerHomer/Imagefundo.png');
+    background-color: #DCF1A7;
+}
+
+.secao-home-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secao-home-infos {
+    width: 759px;
+    /* height: 581px; */
+    display: flex;
+}
+
+.secao-home-info {
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-home-info .home-info {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.secao-home-header .header-home h5 {
+    font-size: 28px;
+    color: #1A3129;
+}
+
+.secao-home-header .secao-home-title h1 {
+    font-size: 58px;
+    font-weight: bold;
+    color: #1A3129;
+}
+
+
+
+.home-info .descri-btns {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.home-info .secao-home-descript {
+    height: 108px;
+}
+.secao-home-descript p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.secao-home-butaos {
+    gap: 20px;
+    display: flex;
+}
+
+.secao-home-butaos .btn-1 {
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    color: #262626;
+    background-color: #CBEA7B;
+    transition: 0.9s;
+}
+
+.secao-home-butaos .btn-1:hover {
+    transform: scale(1.1);
+}
+
+.secao-home-butaos .btn-2 {
+    padding: 16px 24px;
+    font-weight: bolder;
+    border: 1px solid #E5F5BD;
+    border-radius: 8px;
+    background-color: #F6FBE9;
+    transition: 0.9s;
+}
+
+.secao-home-butaos .btn-2:hover {
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+.secao-home-happy {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.secao-home-happy .secao-home-happy-imgs {
+
+    padding: 8px 10px;
+    border: 1px solid #CBEA7B;
+    border-radius: 58px;
+    display: flex;
+
+}
+
+.happy-imgs {
+    width: 117px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.happy-imgs .home-happy-img {
+    width: 50px;
+    height: 50px; 
+    position: absolute;
+}
+
+.home-happy-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 53px;
+    
+}
+
+.happy-imgs .img2 {
+   right: 33px;
+}
+.happy-imgs .img3 {
+   right: 0px;
+}
+
+.secao-home-happy-info {
+    color: #234338;
+}
+
+.secao-home-happy-info p {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.secao-home-happy-info p span {
+    color: #468671;
+}
+
+
+/* ---------img------------ */
+
+
+
+
+
+
+
+
+
+
+/* .main-secao-home {
+
+}
+
+.secao-home {
     height: 832px;
     display: flex;
     gap: 50px;
@@ -186,4 +361,4 @@
 
 .secao-home-happy-info span {
     color: #468671;
-}
+} */

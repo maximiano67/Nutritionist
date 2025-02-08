@@ -1,0 +1,33 @@
+@media (max-width: 1440px) {
+    .main-joinDemo {
+        height: 64px;
+        padding: 14px 80px;
+    }
+
+    .cart-joinDemo {
+        width: 1280px;
+        height: 40px;
+        padding: 0 20px;
+    }
+
+    .cart-joinDemo .cart-joinDemoImg{
+       width: 190px;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+    }
+
+    .joinDemoTitle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .joinDemoTitle p {
+        gap: 14px;
+        font-size: 14px;
+    }
+
+}

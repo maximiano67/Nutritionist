@@ -1,4 +1,5 @@
 import './OurTestimonials.css'
+import './ResponsividadeTestimonials.css'
 // icons
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
@@ -47,24 +48,9 @@ const TestimonialsItems = [
     },
 ]
 
-import { useState } from 'react';
-
-
-
 const OurTestimonials = () => {
 
-    const [postion, setPosition] = useState({ x: 0 })
-    const [activeIcon, setActive] = useState('icons01')
 
-    const next = () => {
-        setPosition({ x: postion.x = -1618 });
-        setActive("icons02")
-
-    }
-    const prev = () => {
-        setPosition({ x: postion.x = 0 })
-        setActive("icons01")
-    }
     return (
         <div className='main-testimonials'>
             <div className="cart-testimonials">
@@ -76,46 +62,42 @@ const OurTestimonials = () => {
                 </div>
 
                 <div className="cart-testimonials-comments">
-                    <ul className='cart-listas' style={{
-                        transform: `translate(${postion.x}px`,
-                        transition: 'transform 1.9s ease'
-                    }}>
-                        {TestimonialsItems.map((item) => (
-                            <li key={item.id} className="cart-list">
-                                <div className="cart-comments">
-                                    <div className="icons-comment">
-                                        <RiDoubleQuotesL />
+                    <div className="main-cart">
+                        <ul className='cart-listas'>
+                            {TestimonialsItems.map((item) => (
+                                <li key={item.id} className="cart-list">
+                                    <div className="cart-comments">
+                                        <div className="icons-comment">
+                                            <RiDoubleQuotesL />
+                                        </div>
+                                        <div className="comment">
+                                            <p>{item.comment}</p>
+                                        </div>
                                     </div>
-                                    <div className="comment">
-                                        <p>{item.comment}</p>
-                                    </div>
-                                </div>
 
-                                <div className="cart-perfil">
-                                    <div className="cart-perfil-comment-img">
-                                        <img src={item.img} />
+                                    <div className="cart-perfil">
+                                        <div className="cart-perfil-comment-img">
+                                            <img src={item.img} />
+                                        </div>
+                                        <div className="commet-perfil-name">
+                                            <p>{item.name}</p>
+                                        </div>
                                     </div>
-                                    <div className="commet-perfil-name">
-                                        <p>{item.name}</p>
-                                    </div>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                     <div className="testimonials-comments-carrosel-btns">
-                        <button className='scroll-btn'
-                            onClick={prev}
+                        <button className='scroll-btn it'
                         ><MdOutlineArrowBackIosNew />
                         </button>
-
+{/* 
                         <div className="ciculo">
-                            <span className={`icons01 ${activeIcon === 'icons01' ? 'active' : ''}`} ></span>
-                            <span className={`icons02 ${activeIcon === 'icons02' ? 'active' : ''}`} ></span>
-                        </div>
+                            <span className='icons01 active'></span>
+                            <span className='icons02' ></span>
+                        </div> */}
 
                         <button className='scroll-btn'
-                            onClick={next}
                         ><MdOutlineArrowForwardIos />
                         </button>
                     </div>

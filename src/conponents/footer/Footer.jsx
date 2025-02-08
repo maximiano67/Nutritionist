@@ -1,4 +1,5 @@
 import './Footer.css'
+import './ResponsividadeFooter.css'
 //icons
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
@@ -18,7 +19,7 @@ const Footer = () => {
           <nav className="nav">
 
             <ul className="nav-bar-logo">
-              <li><Link to={'/'}> <img src={logoImg} alt="Logo nutrição"/></Link>
+              <li><Link to={'/'}> <img src={logoImg} alt="Logo nutrição" /></Link>
 
                 <h1><Link to={'/home'}>Nutritionist</Link></h1>
               </li>
@@ -35,34 +36,30 @@ const Footer = () => {
                 <li><Link to={'/blog'}>Blog</Link></li>
                 <li><Link to={'/contact'}>Contact</Link></li>
               </ul>
-
             </div>
-
 
           </nav>
 
-        </div>
-
-        <div className="footer-cart-contact">
-          <div className="info-contact">
-            <div className="email">
-              <MdEmail />
-              <p>hello@squareup.com</p>
+          <div className="footer-cart-contact">
+            <div className="info-contact">
+              <div className="info-contact-footer">
+                <div className="email">
+                  <MdEmail />
+                  <p>hello@squareup.com</p>
+                </div>
+                <div className="call">
+                  <IoCall />
+                  <p>+91 91813 23 2309</p>
+                </div>
+                <div className="location">
+                  <FaLocationDot />
+                  <p>Somewhere in the World</p>
+                </div>
+              </div>
             </div>
-            <div className="call">
-              <IoCall />
-              <p>+91 91813 23 2309</p>
-            </div>
-            <div className="location">
-              <FaLocationDot />
-              <p>Somewhere in the World</p>
-            </div>
+            <p>© 2023 Nutritionist. All rights reserved.</p>
           </div>
-          <p>© 2023 Nutritionist. All rights reserved.</p>
         </div>
-
-
-
       </div>
 
     </footer>

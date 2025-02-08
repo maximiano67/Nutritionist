@@ -1,0 +1,34 @@
+@media (max-width: 1440px) {
+    .main-footer {
+        width: 100%;
+        height: 244px;
+    }
+
+    .footer {
+        padding: 40px 80px;
+    }
+
+
+    .footer .info-about {
+        gap: 40px;
+    }
+
+    .info-about .footer-cart-contact {
+        padding: 14px 26px;
+    }
+
+    .info-contact .info-contact-footer {
+        gap: 16px;
+    }
+
+    .info-contact-footer .email,
+    .info-contact-footer .call,
+    .info-contact-footer .location {
+        padding: 12px;
+        gap: 4px;
+        border: 1px solid #2C5446;
+        border-radius: 4px;
+        display: flex;
+    }
+
+}

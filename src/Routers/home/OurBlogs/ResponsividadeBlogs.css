@@ -1,0 +1,128 @@
+ @media (max-width: 1440px) {
+     .main-OurBlogs {
+         width: 1280px;
+         height: 1523px;
+         margin-top: 90px;
+     }
+
+     .main-OurBlogs .OurBlogs {
+         width: 1280px;
+         height: 1523px;
+         gap: 60px;
+     }
+
+     .OurBlogs .OurBlogs-header {
+         height: 111px;
+     }
+
+     .OurBlogs-header .Blogs-title {
+         width: 780px;
+         height: 100%;
+         gap: 6px;
+         padding: 0 250px;
+     }
+
+
+     .Blogs-title h1 {
+         font-size: 38px;
+     }
+
+     .Blogs-title p {
+         font-size: 16px;
+     }
+
+     .OurBlogs .OurBlogs-cart {
+         max-height: 1352px;
+     }
+
+     .OurBlogs-cart-main {
+         width: 1280px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .OurBlogs-cart-main .list-de-cart-Blogs {
+         grid-gap: 20px;
+         grid-template-columns: auto auto;
+     }
+
+     .list-de-cart-Blogs .post-cart {
+         padding: 30px;
+         border-radius: 10px;
+     }
+
+     .cart-blogs .post-img {
+         height: 336px;
+     }
+
+     .cart-blogs .post-title-descrition {
+         height: 230px;
+         gap: 20px;
+     }
+
+     .post-title-descrition .post-title {
+         height: 59px;
+         gap: 2px;
+     }
+
+     .post-title span {
+         font-size: 16px;
+     }
+
+     .post-title h2 {
+         font-size: 22px;
+     }
+
+     .post-title-descrition .post-descrition {
+         height: 48px;
+     }
+
+     .post-descrition p {
+         font-size: 16px;
+     }
+
+     .cart-post-perfil .post-perfil {
+         padding: 16px 14px;
+         border-radius: 10px;
+     }
+
+     .post-perfil .post-perfil-info {
+         gap: 14px;
+     }
+
+     .post-perfil-info .perfil-img {
+         width: 50px;
+         height: 50px;
+     }
+
+     .perfil-img img {
+         border-radius: 6px;
+     }
+
+     .post-perfil-info .perfil-name {}
+
+     .perfil-name h3 {
+         font-size: 18px;
+     }
+
+     .perfil-name span {
+         font-size: 16px;
+     }
+
+     .post-perfil .post-perfil-icons {
+         gap: 8px;
+     }
+
+     .post-perfil-icons .icons-post {
+         width: 48px;
+         height: 48px;
+         border-radius: 6px;
+     }
+
+     .icons-post svg {
+         width: 20px;
+         height: 20px;
+     }
+
+ }

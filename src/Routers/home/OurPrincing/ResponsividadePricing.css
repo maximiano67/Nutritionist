@@ -1,0 +1,114 @@
+@media (max-width: 1440px) {
+    .main-ourPricing {
+        width: 100%;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .OurPricing {
+        width: 1280px;
+        height: 706px;
+        gap: 60px;
+    }
+
+    .main-ourPricing-title {
+        padding: 0px 250px;
+        height: 111px;
+        gap: 6px;
+    }
+
+    .main-ourPricing-title .title h1 {
+        font-size: 38px;
+    }
+
+    .main-ourPricing-title .descrition p {
+        font-size: 16px;
+    }
+
+    .OurPricing-cart-price {
+        width: 100%;
+        height: 535px;
+        gap: 40px;
+    }
+
+    .OurPricing-cart-price .cart-btns {
+        height: 95px;
+        gap: 10px;
+    }
+
+    .cart-btns .btn-price {
+        width: 207px;
+        height: 61px;
+        padding: 10px;
+    }
+
+    .btn-price .btn-monthly {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .btn-price .btn-yearly {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .OurPricing-cart-price .descrition p {
+        font-size: 16px;
+    }
+
+    .OurPricing-cards-plans {
+        height: 400px;
+    }
+
+    .OurPricing-cards-plans .cards-OurPricing {
+        gap: 20px;
+    }
+
+    .cards-OurPricing .cart-pricing-plan {
+        width: 413.33px;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .cart-pricing-plan .card-plan-title {
+        gap: 30px;
+    }
+
+    .card-plan-title .cart-title {
+        height: 60px;
+    }
+
+    .card-plan-title .cart-title-pricing h1 {
+        font-size: 24px;
+    }
+
+    .card-plan-title .cart-descrition p {
+        font-size: 16px;
+    }
+
+    .card-plan-title .cart-price-btn {
+         width: 333.33px;
+        height: 104px;
+        gap: 24px;
+    }
+
+    .cart-price-btn .cart-price {
+        gap: 2px;
+    }
+
+    .cart-price-btn .cart-price h1 {
+        font-size: 40px;
+    }
+
+    .cart-price-btn .btn-plan {
+        height: 45px;
+    }
+
+    .btn-plan .btn {
+        width: 412px;
+        padding: 14px 24px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+}

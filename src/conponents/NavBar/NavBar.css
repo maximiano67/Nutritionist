@@ -1,12 +1,11 @@
 .main-nav-bar {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #1A3129;
 }
 
 .nav-bar {
     height: 75px;
-    background-color: #1A3129;
     padding: 20px 169px;
     display: flex;
     align-items: center;
@@ -30,13 +29,21 @@
     color: #fff;
 }
 
-.nav-bar-links li a img {
+.nav-bar-logo li a {
     width: 45px;
     height: 45px;
 }
 
+.nav-bar-logo li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .nav-bar-links {
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
 }

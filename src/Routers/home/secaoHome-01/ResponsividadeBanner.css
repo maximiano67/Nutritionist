@@ -1,0 +1,67 @@
+@media (max-width: 1440px) {
+    
+
+    .main-secao-home .secao-home {
+        gap: 40px;
+    }
+
+
+    .secao-home .secao-home-img {
+        width: 710px;
+        height: 712px;
+
+    }
+
+    .secao-home-infos {
+        width: 610px;
+        /* height: 581px; */
+    }
+    
+    .secao-home-info {
+        gap: 50px;
+    }
+    
+    .secao-home-info .home-info {
+        gap: 16px;
+    }
+
+    .secao-home-header .header-home h5 {
+        font-size: 22px;
+    }
+
+    .secao-home-header .secao-home-title h1 {
+        font-size: 48px;
+    }
+
+    .home-info .descri-btns {
+        gap: 40px;
+    }
+
+    .home-info .secao-home-descript {
+        height: 96px;
+    }
+
+    .secao-home-descript p {
+        font-size: 16px;
+    }
+
+    .secao-home-butaos {
+        gap: 14px;
+    }
+
+    .secao-home-butaos .btn-1 {
+        padding: 14px 16px;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+
+    .secao-home-butaos .btn-2 {
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+
+    .secao-home-happy {
+        gap: 6px;
+    }
+
+}

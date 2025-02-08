@@ -1,65 +1,66 @@
 .main-footer {
-    width: 100%;
+    width: 1920px;
     height: 299px;
     background-color: #1A3129;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.main-footer .footer {
+.footer {
     width: 1595px;
-    margin: 0 163px;
+    padding: 50px 163px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer .info-about {
+    width: 100%;
     gap: 50px;
     display: flex;
     flex-direction: column;
 }
 
-.footer .info-about .nav {
-    display: flex;
-}
 
-.footer .info-about .nav .nav-bar-links {
+.info-about .nav {
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 
-.footer .footer-cart-contact {
-    padding: 16px 30px 16px 20px;
-    background-color: #234338;
-    border: 1px solid #2C5446;
+
+.info-about .footer-cart-contact {
+    height: 55px;
+    padding: 16px 20px;
+    color: #fff;
     border-radius: 8px;
+    border: 1px solid #2C5446;
+    background-color: #234338;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-cart-contact .info-contact {
     display: flex;
+}
+
+.info-contact .info-contact-footer {
+    display: flex;
     gap: 20px;
 }
 
-.footer-cart-contact .info-contact .info-contact,
-.footer-cart-contact .info-contact .email,
-.footer-cart-contact .info-contact .call,
-.footer-cart-contact .info-contact .location {
+.info-contact-footer .email,
+.info-contact-footer .call,
+.info-contact-footer .location {
     padding: 14px;
+    gap: 6px;
     border: 1px solid #2C5446;
     border-radius: 6px;
-    gap: 6px;
     display: flex;
-    color: #fff;
-    font-weight: 400;
 }
 
-.footer-cart-contact .info-contact .info-contact svg,
-.footer-cart-contact .info-contact .email svg,
-.footer-cart-contact .info-contact .call svg,
-.footer-cart-contact .info-contact .location svg {
+.info-contact-footer .email svg,
+.info-contact-footer .call svg,
+.info-contact-footer .location svg {
     color: #CBEA7B;
-}
-
-.footer-cart-contact p {
-    color: #fff;
 }

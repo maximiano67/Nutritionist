@@ -1,4 +1,5 @@
 import './HomeFeatures.css'
+import './ResponsividadeFeatures.css'
 //icons
 import { PiFlowerTulipBold } from "react-icons/pi";
 import { FaGraduationCap} from "react-icons/fa6";
@@ -48,6 +49,7 @@ const listFeatures = [
 
 const HomeFeatures = () => {
     return (
+        
         <div className='main-home-features'>
             <div className='home-features'>
                 <div className="features-header">

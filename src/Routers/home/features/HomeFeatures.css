@@ -4,6 +4,7 @@
 }
 
 .home-features {
+    gap: 80px;
     width: 1596px;
     height: 1008px;
     margin: 0 auto;
@@ -14,7 +15,6 @@
 .home-features .features-header {
     margin: 0 auto;
     gap: 10px;
-    padding-bottom: 80px;
     text-align: center;
     display: flex;
     flex-direction: column;

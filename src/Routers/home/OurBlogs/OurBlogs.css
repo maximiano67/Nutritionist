@@ -1,27 +1,42 @@
 .main-OurBlogs {
-    margin: 0 auto;
+    width: 100%;
+    height: 1910PX;
     margin-top: 130px;
-    width: 1596px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-OurBlogs .OurBlogs {
-
+    width: 1596px;
+    height: 1910px;
     gap: 80px;
-    text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.OurBlogs-header {
-    margin: 0 300px;
+/* Titulo */
+
+.OurBlogs .OurBlogs-header {
+    width: 100%;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .OurBlogs-header .Blogs-title {
+    width: 996px;
     gap: 10px;
     display: flex;
     flex-direction: column;
-
+    padding: 0 300px;
+    align-items: center;
 }
+
+/* Texto de title */
 
 .Blogs-title h1 {
     font-size: 48px;
@@ -29,50 +44,71 @@
 }
 
 .Blogs-title p {
-    font-weight: 500;
+    font-size: 18px;
 }
 
-.OurBlogs-cart {
+/* Our Blogs Cart */
+
+.OurBlogs .OurBlogs-cart {
     width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.list-de-cart-Blogs {
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-}
-
-.post-cart {
-    padding: 40px;
-    gap: 40px;
-    background-color: #F6FBE9;
-    border: 1px solid #EEF8D3;
+    max-height: 1694px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* OLHA ESSE */
 }
 
-.post-cart .post-img {
+
+.OurBlogs-cart-main .list-de-cart-Blogs {
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Cartão */
+
+.list-de-cart-Blogs .post-cart {
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #F6FBE9;
+    border: 1px solid #EEF8D3;
+}
+
+.post-cart .cart-blogs {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart-blogs .post-img {
+    max-width: 703px;
     height: 428px;
     border-radius: 12px;
 }
 
-.post-img img {
+.cart-blogs .post-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
 }
 
+/* Descrição de perfil */
+.cart-blogs .post-title-descrition {
+    max-width: 703px;
+    height: 284px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 .post-title-descrition .post-title {
+    width: 100%;
+    height: 70px;
     gap: 4px;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    justify-content: center;
 }
 
 .post-title span {
@@ -81,46 +117,38 @@
 
 .post-title h2 {
     font-size: 26px;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
-.post-cart .post-title-descrition {
-    width: 703px;
-    height: 284px;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    justify-content: space-between;
-}
-
-.cart-post-perfil {
+.post-title-descrition .post-descrition {
     width: 100%;
-    height: 100px;
-   
+    height: 54px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.post-descrition p {
+    font-size: 18px;
+    color: #4C4C4D;
+}
 
 
-.cart-post-perfil .post-perfil { 
+/* Perfil cart */
+
+.cart-post-perfil .post-perfil {
+    padding: 20px 16px;
     border-radius: 12px;
-    padding: 10px;
-    background-color: #FAFDF2;
-    border: 1px solid #EEF8D3;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    background-color: #FAFDF2;
+    border: 1px solid #EEF8D3;
 
 }
 
-.post-perfil-info {
-    gap: 16px;
+.post-perfil .post-perfil-info {
     display: flex;
-    align-items: center;
+    gap: 16px;
 }
 
 .post-perfil-info .perfil-img {
@@ -131,29 +159,47 @@
 .perfil-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 8px;
+    object-fit: cover;
+}
+
+.post-perfil-info .perfil-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil-name h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1A3129;
+}
+
+.perfil-name span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #59595A;
 }
 
 .post-perfil .post-perfil-icons {
-    display: flex;
     gap: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .post-perfil-icons .icons-post {
     width: 60px;
     height: 60px;
+    border-radius: 8px;
+    background-color: #F6FBE9;
+    border: 1px solid #EEF8D3;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F6FBE9;
-    border: 1px solid #EEF8D3;
-    border-radius: 6px;
 }
 
 .icons-post svg {
     width: 24px;
     height: 24px;
     color: #4C4C4D;
-    font-weight: bold;
 }

@@ -1,4 +1,5 @@
 import './OurBlogs.css'
+import './ResponsividadeBlogs.css'
 
 import imgPosteUm from '../../../assets/OurBlogsImg/Image-post-1.jpg'
 import imgPosteDois from '../../../assets/OurBlogsImg/Image-post-2.jpg'
@@ -75,63 +76,70 @@ const OurBlogs = () => {
 
         <div className="OurBlogs-header">
           <div className="Blogs-title">
-            <h1>Our Blogs</h1>
-            <p>Our blog is a treasure trove of informative and engaging articles written by our team of nutritionists, dietitians, and wellness experts. Here´s what you can expect from our blog.</p>
+    
+              <h1>Our Blogs</h1>
+              <p>Our blog is a treasure trove of informative and engaging articles written by our team of nutritionists, dietitians, and wellness experts. Here´s what you can expect from our blog.</p>
+          
           </div>
         </div>
 
 
         <div className="OurBlogs-cart">
-          <ul className='list-de-cart-Blogs'>
-            {OurBlogsPost.map((post) => (
-              <li key={post.id} className='post-cart'>
-                <div className="post-img">
-                  <img src={post.img} alt="" />
-                </div>
-                <div className="post-title-descrition">
-                  <div className="post-title">
-                    <span>{post.span}</span>
-                    <h2>{post.title}</h2>
-                  </div>
+          <div className="OurBlogs-cart-main">
+            <ul className='list-de-cart-Blogs'>
+              {OurBlogsPost.map((post) => (
+                <li key={post.id} className='post-cart'>
+                  <div className="cart-blogs">
+                    <div className="post-img">
+                      <img src={post.img} alt="" />
+                    </div>
+                    <div className="post-title-descrition">
+                      <div className="post-title">
+                        <span>{post.span}</span>
+                        <h2>{post.title}</h2>
+                      </div>
 
-                  <div className="post-descrition">
-                    <p>{post.descrition}</p>
-                  </div>
+                      <div className="post-descrition">
+                        <p>{post.descrition}</p>
+                      </div>
 
-                  <div className="cart-post-perfil">
-                    {post.perfl.map((item) => (
+                      <div className="cart-post-perfil">
+                        {post.perfl.map((item) => (
 
-                      <div key={item.id} className="post-perfil">
-                        <div className="post-perfil-info">
-                          <div className="perfil-img">
-                            <img src={item.img} />
+                          <div key={item.id} className="post-perfil">
+                            <div className="post-perfil-info">
+                              <div className="perfil-img">
+                                <img src={item.img} />
+                              </div>
+
+                              <div className="perfil-name">
+                                <h3>{item.nome}</h3>
+                                <span>23 May 2023 - 5 min read</span>
+                              </div>
+
+                            </div>
+
+                            <div className="post-perfil-icons">
+                              <div className='icons-like icons-post'>
+                                <FaRegHeart />
+                              </div>
+                              <div className='icons-saved icons-post'>
+                                <MdSaveAlt />
+                              </div>
+                            </div>
+
                           </div>
-
-                          <div className="perfil-name">
-                            <h3>{item.nome}</h3>
-                            <span>23 May 2023 - 5 min read</span>
-                          </div>
-
-                        </div>
-
-                        <div className="post-perfil-icons">
-                          <div className='icons-like icons-post'>
-                            <FaRegHeart />
-                          </div>
-                          <div className='icons-saved icons-post'>
-                          <MdSaveAlt />
-                          </div>
-                        </div>
+                        ))}
 
                       </div>
-                    ))}
 
+                    </div>
                   </div>
+                </li>
+              ))}
+            </ul>
 
-                </div>
-              </li>
-            ))}
-          </ul>
+          </div>
         </div>
 
 
