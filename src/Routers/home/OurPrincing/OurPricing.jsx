@@ -25,7 +25,7 @@ const OurPricing = () => {
             title: 'Ultimate Plan',
             p: 'Up to 50% off on Yearly Plan',
             descricao: 'Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.',
-            price: '$79',
+            price: '$99',
             span: '/month'
         },
     ]
